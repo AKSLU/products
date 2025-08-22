@@ -3,8 +3,6 @@ from sqlalchemy.orm import declarative_base, sessionmaker
 
 Base = declarative_base()
 
-Base = declarative_base()
-
 class Product(Base):
     __tablename__ = 'products'
 
@@ -33,3 +31,4 @@ all_products = session.query(Product).all()
 
 for i in all_products:
     print(i)
+
